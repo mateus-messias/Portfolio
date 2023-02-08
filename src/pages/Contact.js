@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import qr from './qrcode.png'
+import {FaWhatsappSquare} from 'react-icons/fa'  
 
 export const Contact = () => {
   const [name, setName] = useState('')
@@ -64,7 +66,16 @@ export const Contact = () => {
             </form>
         </div>
         <div className='whatsapp'>
-
+            <div className='whatsapp-card'>
+                <div className='whatsapp-text'>
+                    <FaWhatsappSquare className='whatsapp-icon'/>
+                    <h2>WhatsApp</h2>
+                </div>
+                <a href="https://wa.me/qr/YPBBU36ZAS4GA1" target='blank'>
+                    <img src={qr} className='qrcode'/>
+                </a>
+                <p>Encaneie / Clique</p>
+            </div>
         </div>
     </section>
   )

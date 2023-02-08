@@ -7,13 +7,14 @@ import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
 
 function App() {
+  
   return (
     <div>
       <Navbar/>
       <Home/>
       <About/>
       <Projects/>
-      {/* <Contact/> */}
+      <Contact/>
     </div>
   );
 }
