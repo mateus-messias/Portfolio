@@ -1,41 +1,84 @@
-.navbar {
+nav {
+    background-color: #000219;
+}
+.nav-header {
     display: flex;
     align-items: center;
-    background-color: var(--bcg-color);
-    width: 100vw;
-    height: 3rem;
-    border-bottom: 1px solid var(--txt-color);
-    justify-content: center;
-    font-size: 1.3rem;
-    position: static;
+    justify-content: end;
+    height: 50px;
+    padding: 0 1rem;
 }
-.nav-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-.nav-links li {    
-    margin-right: 5rem;
+.nav-toggle {
+    font-size: 1.5rem;
     color: var(--txt-color);
+    background-color: transparent;
+    border-color: transparent;
+    transition: .3s;
     cursor: pointer;
 }
-.nav-links li a{
+.nav-toggle:hover {
+    color: var(--btn-color);
+}
+.close-btn{
+    color: red;
+}
+
+.links a {
     color: var(--txt-color);
+    font-size: 1rem;
+    display: block;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    padding: .5rem 1rem;
+    transition: .3s;
     text-decoration: none;
 }
-.nav-links li:hover, 
-.nav-links li a:hover {
-    color: #0388A6;
+
+.links a:hover {
+    color: var(--btn-color);
+    padding-left: 1.5rem;
+}
+
+.links-container {
+    height: 0;
+    overflow: hidden;
     transition: .3s;
 }
 
-@media screen and (max-width: 420px) {
-    .navbar{
+.show-container {
+    height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .nav-header {
+        padding: .3rem;
+    }
+    .nav-toggle {
         display: none;
+    }
+    .links-container {
+        height: auto !important;        
+    }
+    .links {
+        display: flex;       
+    }
+    .links a {
+        padding: 0;
+        margin: 0 2rem;
+        font-size: 1.3rem;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
     }
 }

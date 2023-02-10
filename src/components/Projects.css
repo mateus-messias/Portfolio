@@ -23,8 +23,8 @@
 }
 .card-project{
   box-sizing: border-box;
-  width: 80vw;
-  height: 55vh;
+  /* width: 80vw; */
+  height: 60vh;
   margin: auto;
   background-color: var(--bcg2-color);
   border-radius: 15px;

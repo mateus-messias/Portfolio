@@ -39,10 +39,10 @@ export const Contact = () => {
   }
 
   return (
-    <section className='container contact'>
+    <section className='container contact' id='contact'>
         <div >
             <form className='email-form' onSubmit={sendEmail}>
-                {/* <h2 className='title'>Me mande um Email</h2> */}
+                <h2>Me mande um Email</h2>
                 <input 
                     className='input'
                     type="text" 
