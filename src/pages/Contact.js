@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import qr from './qrcode.png'
 import {FaWhatsappSquare} from 'react-icons/fa'  
+import './Contact.css'
 
 export const Contact = () => {
   const [name, setName] = useState('')
@@ -38,7 +39,7 @@ export const Contact = () => {
   }
 
   return (
-    <section className='container'>
+    <section className='container contact'>
         <div >
             <form className='email-form' onSubmit={sendEmail}>
                 {/* <h2 className='title'>Me mande um Email</h2> */}

@@ -1,0 +1,113 @@
+.contact {
+    height: 100%;
+}
+.email-form {
+    width: 31.25;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: .5rem;
+    width: 25rem;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    font-family: 'Consolas';
+}
+
+.msg {
+    height: 15rem;
+    padding: .5rem 0 0 .5rem;
+}
+
+.btn {
+    background-color: var(--btn-color);
+    color: var(--txt-color);
+    padding: .7rem ;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    width: 400px;
+    height: 55%;
+    margin-bottom: 3rem;
+}
+
+.whatsapp-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    width: 100%;
+}
+
+.whatsapp-icon {
+    color: #1BD741;
+    width: 35px;
+    height: 35px;
+    margin: 0 1rem 0 0;
+}
+
+.qrcode {
+    height: 15.5rem;
+    width: 15.5rem;
+    border-radius: 10%;
+}
+@media screen and (min-width: 1000px) {
+    
+    .email-form{
+        width: 25rem;
+    }
+    .input {
+        width: 30rem;
+        height: 3rem;
+        font-size: .85rem;
+    }
+    .msg {
+        height: 15rem;
+        padding: .5rem 0 0 .5rem;
+    }
+    .btn {
+        padding: .7rem 1.25rem;
+        width: auto;
+        font-size: 1.3rem;
+    }
+    .whatsapp {
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+    .qrcode {
+        height: 15rem;
+        width: 15rem;        
+    }
+}
