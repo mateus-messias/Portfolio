@@ -11,16 +11,22 @@ export const Projects = () => {
 
   const projects = [
     {
+      name: 'Basic Projects',
+      description: 'Projetos mais simples feitos no curso de React',
+      img: './img/basic_projects.png',
+      link: 'https://react-basic-projects.netlify.app',
+    },
+    {
       name: 'NaTrave',
       description: 'Site de apostas para os jogos da Copa do Mundo 2022',
       img: './img/natrave.png',
       link: 'https://worldcup2022-web.vercel.app',
     },
     {
-      name: 'ComfySloth',
-      description: 'Site de apostas para os jogos da Copa do Mundo 2022',
-      img: './img/comfy.png',
-      link: '',
+      name: 'Maratona Invertida',
+      description: 'Projeto feito no evento da Maratona Invertida',
+      img: './img/maratona_invertida.png',
+      link: 'https://maratona-invertida-kenzie.netlify.app',
     },   
   ]
 

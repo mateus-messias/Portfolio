@@ -10,7 +10,7 @@ export const About = () => {
         <div className='about-me' >
           <Fade right>
             <h2 className='title'>Sobre mim</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quas aliquam facere iste ab quam, nobis repudiandae impedit repellendus et, voluptatum atque modi ipsum accusamus reiciendis consequatur at eius optio.</p>
+            <p>Meu nome é Mateus, sou um cara apaixonado por tecnologia que decidiu trilhar o caminho da programação.  Possuo 4 anos de experiência como Técnico em Informática e atualmente estou focando meus estudos nas tecnologias Front-End.</p>
             <h2 className='title'>Tecnologias</h2>
             
               <ul className='stacks'>

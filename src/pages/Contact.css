@@ -1,5 +1,5 @@
 .contact {
-    /* height: 100%; */
+    height: 100%;
     background-color: var(--bcg2-color);
 }
 .email-form {
@@ -56,9 +56,9 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    width: 400px;
-    height: 55%;
-    margin-bottom: 3rem;
+    width: 20rem;
+    height: 25rem;  
+    margin: 3rem;
 }
 
 .whatsapp-card {
@@ -89,7 +89,9 @@
     border-radius: 10%;
 }
 @media screen and (min-width: 1000px) {
-    
+    .contact{
+        height: 100vh;
+    }
     .email-form{
         width: 25rem;
     }
@@ -106,11 +108,7 @@
         padding: .7rem 1.25rem;
         width: auto;
         font-size: 1.3rem;
-    }
-    .whatsapp {
-        width: 20rem;
-        margin-bottom: 2rem;
-    }
+    }    
     .qrcode {
         height: 15rem;
         width: 15rem;        

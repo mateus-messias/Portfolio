@@ -1,5 +1,6 @@
 nav {
     background-color: #000219;
+    width: 100vw;
 }
 .nav-header {
     display: flex;
