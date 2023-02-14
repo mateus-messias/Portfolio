@@ -1,19 +1,15 @@
 import React from 'react' 
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import { Typewriter } from 'react-simple-typewriter'
-import { Fade } from 'react-reveal'
 import './Home.css'
 import notebook from './images/notebook.png'
 
 export const Home = () => {  
   return (
-    <section className='container' id='home'>
-        <Fade right>
+    <section className='container' id='home'>        
             <div className='svg'>
                 <img src={notebook}/>
-            </div>
-        </Fade>
-        <Fade left>
+            </div>        
             <div className='text'>
                 <h2>Olá, eu sou</h2>
                 <h2 className='my-name'>
@@ -34,15 +30,7 @@ export const Home = () => {
                         <FaLinkedin className='social-icon'/>
                     </a>
                 </div>
-            </div>
-        </Fade>
+            </div>        
     </section>
   )
 }
-<Typewriter
-                words={['Mateus Messias']}
-                loop={1}
-                cursor
-                cursorStyle='|'
-                typeSpeed={100}                
-            />

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper';
-import { Fade } from 'react-reveal'
 import './Projects.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -31,48 +30,46 @@ export const Projects = () => {
   ]
 
   return (
-    <section className='container-project' id='projects'>
-      <Fade>
-        <h2 className='title'>Projetos</h2>      
-        <div className="swiper"> 
-          <div className='slide-content '>
-            <Swiper          
-              modules={[ Navigation, Pagination, A11y]}
-              spaceBetween={20}
-              slidesPerView={1}
-              loop
-              pagination={{
-                el: '.swiper-pagination',
-                type:'fraction',                
-              }}   
-              navigation={{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-              }} 
-            >         
-              <div className='card-container'>
-                {projects.map((item) => {
-                  const {name, description, img, link} = item
-                  return (
-                    <SwiperSlide>
-                      <div className='card-project'>
-                        <h2>{name}</h2>
-                        <a href={link} target='blank'>
-                          <img src={img} className='img-project' />
-                        </a>                        
-                        <p>{description}</p>
-                      </div>
-                    </SwiperSlide>
-                  )
-                })}          
-              </div> 
-            </Swiper>        
-          </div>                   
-            <div className='swiper-pagination'></div>  
-            {/* <div className='swiper-button-prev btn-prev'></div>        
-            <div className='swiper-button-next btn-next'></div>     */}
-        </div>
-      </Fade>
+    <section className='container-project' id='projects'>      
+      <h2 className='title'>Projetos</h2>      
+      <div className="swiper"> 
+        <div className='slide-content '>
+          <Swiper          
+            modules={[ Navigation, Pagination, A11y]}
+            spaceBetween={20}
+            slidesPerView={1}
+            loop
+            pagination={{
+              el: '.swiper-pagination',
+              type:'fraction',                
+            }}   
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            }} 
+          >         
+            <div className='card-container'>
+              {projects.map((item) => {
+                const {name, description, img, link} = item
+                return (
+                  <SwiperSlide>
+                    <div className='card-project'>
+                      <h2>{name}</h2>
+                      <a href={link} target='blank'>
+                        <img src={img} className='img-project' />
+                      </a>                        
+                      <p>{description}</p>
+                    </div>
+                  </SwiperSlide>
+                )
+              })}          
+            </div> 
+          </Swiper>        
+        </div>                   
+          <div className='swiper-pagination'></div>  
+          {/* <div className='swiper-button-prev btn-prev'></div>        
+          <div className='swiper-button-next btn-next'></div>     */}
+      </div>      
     </section>
   )
 }
