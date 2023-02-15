@@ -42,7 +42,7 @@ a {
 .title {
   text-decoration: 8px underline var(--btn-color);
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5rem;
   font-family: 'Press Start 2P', cursive;
   margin-bottom: 2rem;
 }
@@ -53,5 +53,6 @@ a {
   }
   .title{
     text-align: left;
+    font-size: 2rem;
   }
 }

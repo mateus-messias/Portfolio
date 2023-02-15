@@ -5,7 +5,10 @@ import './About.css'
 
 export const About = () => {
   return (
-    <section className='container about' id='about'>      
+    <section className='container about' id='about'>   
+      <div className='svg'>
+          <img src={person} clasName='about-img'/>
+      </div>    
       <div className='about-me' >         
         <h2 className='title'>Sobre mim</h2>
         <p>Meu nome é Mateus, sou um cara apaixonado por tecnologia que decidiu trilhar o caminho da programação.  Possuo 4 anos de experiência como Técnico em Informática e atualmente estou focando meus estudos nas tecnologias Front-End.</p>
@@ -28,10 +31,7 @@ export const About = () => {
             <p>React</p>
           </li>
         </ul>
-      </div>        
-      <div className='svg'>
-          <img src={person} clasName='about-img'/>
-      </div>      
+      </div>
     </section>
   ) 
 }

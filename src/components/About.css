@@ -1,13 +1,13 @@
 .about {
     background-color: var(--bcg2-color);
-    flex-direction: column-reverse;
+    /* flex-direction: row-reverse; */
 }
 .about-img{
-    /* display: none; */
+    display: none;
 }
 
 .about-me {
-    width: 60vh;
+    width: 80vw;
     /* margin: auto; */
 }
 .about-me p {
@@ -58,7 +58,7 @@
 @media screen and (min-width: 800px) {
     .about-me {
         width: 30rem;
-    }
+    }    
 }
 
 @media screen and (min-width: 1000px) {      
